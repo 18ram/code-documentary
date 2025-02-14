@@ -1,0 +1,56 @@
+/**
+ * This Java program counts the number of elements in an integer array 
+ * that are divisible by either 2 or 3.
+ * It iterates through the array and increments a counter whenever 
+ * an element satisfies the condition.
+ * Finally, it prints the total count.
+ */
+class Main {
+    public static void main(String[] args) {
+        // Define an integer array with some values
+        int arr[] = {10, 1, 1, 1, 1, 4, 6, 5};
+
+        // Variable to store the count of numbers divisible by 2 or 3
+        int count = 0;
+
+        // Loop through the array to check divisibility
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0 || arr[i] % 3 == 0) { // Check divisibility by 2 or 3
+                count += 1; // Increment count when condition is met
+            }
+        }
+
+        // Print the final count of numbers meeting the condition
+        System.out.println("Count of numbers divisible by 2 or 3: " + count);
+    }
+}
+
+
+
+
+/**
+ * This Java program counts the number of elements in an integer array 
+ * that are divisible by both 2 and 3.
+ * It iterates through the array and increments a counter whenever 
+ * an element satisfies the condition.
+ * Finally, it prints the total count.
+ */
+class Main {
+    public static void main(String[] args) {
+        // Define an integer array with some values
+        int arr[] = {10, 1, 1, 1, 1, 4, 6, 5};
+
+        // Variable to store the count of numbers divisible by both 2 and 3
+        int count = 0;
+
+        // Loop through the array to check divisibility
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0 && arr[i] % 3 == 0) { // Check divisibility by both 2 and 3
+                count += 1; // Increment count when condition is met
+            }
+        }
+
+        // Print the final count of numbers meeting the condition
+        System.out.println("Count of numbers divisible by both 2 and 3: " + count);
+    }
+}
