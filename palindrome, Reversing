@@ -1,0 +1,53 @@
+// Java program to reverse a string
+class Main {
+    public static void main(String[] args) {
+        // Define a string
+        String s = "chapri";
+        String ans = "";
+
+        // Loop from the last character to the first
+        for (int i = s.length() - 1; i >= 0; i--) {
+            ans = ans + s.charAt(i);
+        }
+
+        // Print the reversed string
+        System.out.println("Reversed string: " + ans);
+    }
+}
+
+
+//builtin function 
+
+class Main {
+    public static void main(String[] args) {
+        String s = "chapri";
+        StringBuilder ans = new StringBuilder(s);
+
+        // Reverse the string using built-in method
+        ans.reverse();
+
+        System.out.println("Reversed string: " + ans);
+    }
+}
+
+
+palindrome:
+
+class Main {
+    public static void main(String[] args) {
+        String s = "abccba";  // Input string
+        String ans = "";
+
+        // Reverse the string
+        for (int i = s.length() - 1; i >= 0; i--) {
+            ans = ans + s.charAt(i);
+        }
+
+        // Check if the reversed string is equal to the original
+        if (ans.equals(s)) {
+            System.out.println("It is a palindrome!");
+        } else {
+            System.out.println("It is not a palindrome!");
+        }
+    }
+}
