@@ -54,3 +54,13 @@ class Main {
         System.out.println("Count of numbers divisible by both 2 and 3: " + count);
     }
 }
+
+
+class Main {
+    public static void main(String[] args) {
+        // Logical condition using AND (&&) and OR (||)
+        if ((10 > 5 && 10 > 8) || (7 > 3 && 8 > 9)) {
+            System.out.println("Try programiz.pro");
+        }
+    }
+}
