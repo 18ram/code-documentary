@@ -22,3 +22,29 @@ class Main {
         System.out.println("Count of 1s in the array: " + count);
     }
 }
+
+
+/**
+ * This Java program counts the number of even numbers in an integer array.
+ * It iterates through the array and increments a counter whenever an even number is found.
+ * Finally, it prints the total count of even numbers.
+ */
+class Main {
+    public static void main(String[] args) {
+        // Define an integer array with some values
+        int arr[] = {10, 1, 1, 1, 1, 4, 6, 5};
+
+        // Variable to store the count of even numbers
+        int count = 0;
+
+        // Loop through the array to count even numbers
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0) { // Check if the number is even
+                count += 1; // Increment count for even numbers
+            }
+        }
+
+        // Print the final count of even numbers in the array
+        System.out.println("Count of even numbers in the array: " + count);
+    }
+}
